@@ -918,19 +918,19 @@ __FDEVOPT1
  *(.comment)
  .comment         0x000000         0x5e c:/program files/microchip/xc16/v1.60/bin/bin/../../lib\liblega-c-elf.a(xfiles.DA_eo)
 
-.debug_info       0x000000       0x5215
+.debug_info       0x000000       0x52f1
  *(.debug_info)
- .debug_info      0x000000        0x35d build/default/production/mcc_generated_files/clock.o
- .debug_info      0x00035d        0xc00 build/default/production/mcc_generated_files/system.o
- .debug_info      0x000f5d        0x418 build/default/production/mcc_generated_files/traps.o
- .debug_info      0x001375        0xf6a build/default/production/mcc_generated_files/adc1.o
- .debug_info      0x0022df        0x509 build/default/production/mcc_generated_files/interrupt_manager.o
- .debug_info      0x0027e8        0x71c build/default/production/mcc_generated_files/tmr3.o
- .debug_info      0x002f04        0x696 build/default/production/mcc_generated_files/pin_manager.o
- .debug_info      0x00359a        0xbc5 build/default/production/mcc_generated_files/rtcc.o
- .debug_info      0x00415f        0x305 build/default/production/main.o
- .debug_info      0x004464        0xc4d build/default/production/lcd.o
- .debug_info      0x0050b1        0x164 build/default/production/lcd_printf.o
+ .debug_info      0x000000        0x371 build/default/production/mcc_generated_files/clock.o
+ .debug_info      0x000371        0xc14 build/default/production/mcc_generated_files/system.o
+ .debug_info      0x000f85        0x42c build/default/production/mcc_generated_files/traps.o
+ .debug_info      0x0013b1        0xf7e build/default/production/mcc_generated_files/adc1.o
+ .debug_info      0x00232f        0x51d build/default/production/mcc_generated_files/interrupt_manager.o
+ .debug_info      0x00284c        0x730 build/default/production/mcc_generated_files/tmr3.o
+ .debug_info      0x002f7c        0x6aa build/default/production/mcc_generated_files/pin_manager.o
+ .debug_info      0x003626        0xbd9 build/default/production/mcc_generated_files/rtcc.o
+ .debug_info      0x0041ff        0x319 build/default/production/main.o
+ .debug_info      0x004518        0xc61 build/default/production/lcd.o
+ .debug_info      0x005179        0x178 build/default/production/lcd_printf.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0xad0

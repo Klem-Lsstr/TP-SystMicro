@@ -50,9 +50,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <xc.h>
-#include <stdint.h>
-#include "spi.h"
 
 /*
                          Main application
@@ -60,24 +57,12 @@
 uint16_t valTemp; //temperature
 bcdTime_t currentTime;
 int flag;
-double Vout;
-#define Buffer_size 10
-double data[Buffer_size]={0,0,0,0,0,0,0,0,0,0};
-
-void memorySPI(){
-   
-    for(i=0,i++,i<11)
-    {
-        data[i] = Vout;
-    }
-    SPISend(data,Buffer_size)
-}
 
 
 void showTemp(){
     
     char str[16] ; 
-    Vout = ((double)valTemp-0.5)/10; 
+    double Vout = ((double)valTemp-0.5)/10; 
     sprintf(str, "%.1f", Vout);
     LCD_PutString( "Temp = ", 7 );
     LCD_PutString( str, 4 );
@@ -89,6 +74,8 @@ void showDate(){
     
     //LCD_ClearScreen();
    
+ 
+    
     printf("%d/%d   %d:%d",
     currentTime.tm_mday ,
     currentTime.tm_mon,
@@ -96,6 +83,7 @@ void showDate(){
     currentTime.tm_min);
     LCD_PutString("\r\n", 4);
      
+   
 }
 
 
@@ -110,7 +98,6 @@ int main(void)
         {
             showTemp();
             showDate();
-            memorySPI();
             flag = 0; 
         } 
     }
